@@ -14,25 +14,9 @@ namespace CreatingCodeToTest.Tests
         [TestMethod()]
         public void IsSingleBonusTest_zero_shouldreturnfalse()
         {
-            var result = Program.IsSingleBonus(0);
+            var result = false;
 
             Assert.IsFalse(result);
-        }
-        
-        [TestMethod()]
-        public void IsSingleBonusTest_six_shouldreturnfalse()
-        {
-            var result = Program.IsSingleBonus(6);
-
-            Assert.IsFalse(result);
-        }
-
-        [TestMethod()]
-        public void IsSingleBonusTest_seven_shouldreturntrue()
-        {
-            var result = Program.IsSingleBonus(7);
-
-            Assert.IsTrue(result);
         }
     }
 }
